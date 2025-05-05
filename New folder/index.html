@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Online Learning Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="EduLearn Logo">
+                <span>EduLearn</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="test.html">Tests</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn login-btn">Login</button>
+                <button class="btn signup-btn">Sign Up</button>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Learn Without Limits</h1>
+                <p>Start, switch, or advance your career with 5,000+ courses, Professional Certificates, and degrees from world-class universities and companies.</p>
+                <div class="hero-cta">
+                    <button class="btn primary-btn">Join for Free</button>
+                    <button class="btn secondary-btn">Explore Courses</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.png" alt="Students learning online">
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Browse by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Development</h3>
+                    <p>Web, Mobile, Game, and Software Development</p>
+                    <a href="#" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Design</h3>
+                    <p>Graphic, UX/UI, Web, and Game Design</p>
+                    <a href="#" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Business</h3>
+                    <p>Finance, Marketing, Management, and Entrepreneurship</p>
+                    <a href="#" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Science</h3>
+                    <p>Computer Science, Data Science, and Natural Sciences</p>
+                    <a href="#" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grade Levels Section -->
+    <section class="grade-levels">
+        <div class="container">
+            <h2 class="section-title">Courses by Grade Level</h2>
+            <div class="grade-tabs">
+                <button class="grade-tab active" data-grade="elementary">Elementary</button>
+                <button class="grade-tab" data-grade="middle">Middle School</button>
+                <button class="grade-tab" data-grade="high">High School</button>
+                <button class="grade-tab" data-grade="college">College</button>
+                <button class="grade-tab" data-grade="professional">Professional</button>
+            </div>
+            <div class="courses-grid">
+                <!-- Courses will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Test Demo Section -->
+    <section class="video-demo">
+        <div class="container">
+            <h2 class="section-title">Experience Our Learning Platform</h2>
+            <div class="video-container">
+                <div class="video-player">
+                    <video id="demoVideo" controls>
+                        <source src="videos/sample-lesson.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-controls">
+                        <button class="video-control-btn" id="playPauseBtn"><i class="fas fa-play"></i></button>
+                        <button class="video-control-btn" id="muteBtn"><i class="fas fa-volume-up"></i></button>
+                        <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+                        <div class="video-time">
+                            <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                        </div>
+                        <button class="video-control-btn" id="fullscreenBtn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="video-quiz">
+                    <h3>Test Your Knowledge</h3>
+                    <div class="quiz-question">
+                        <p>What was the main topic covered in this video?</p>
+                        <div class="quiz-options">
+                            <label>
+                                <input type="radio" name="quiz1" value="A"> Option A
+                            </label>
+                            <label>
+                                <input type="radio" name="quiz1" value="B"> Option B
+                            </label>
+                            <label>
+                                <input type="radio" name="quiz1" value="C"> Option C
+                            </label>
+                            <label>
+                                <input type="radio" name="quiz1" value="D"> Option D
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn quiz-submit-btn">Submit Answer</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Welcome Back</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <div class="form-options">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="forgot-password.html">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn auth-btn">Login</button>
+                <div class="social-auth">
+                    <p>Or login with</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="auth-switch">
+                    Don't have an account? <a href="#" id="showSignup">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Create Your Account</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Full Name</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Confirm Password</label>
+                    <input type="password" id="registerConfirmPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerInterest">Primary Learning Interest</label>
+                    <select id="registerInterest" required>
+                        <option value="">Select an interest</option>
+                        <option value="development">Development</option>
+                        <option value="design">Design</option>
+                        <option value="business">Business</option>
+                        <option value="science">Science</option>
+                        <option value="math">Mathematics</option>
+                        <option value="humanities">Humanities</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="registerGrade">Education Level</label>
+                    <select id="registerGrade" required>
+                        <option value="">Select your level</option>
+                        <option value="elementary">Elementary School</option>
+                        <option value="middle">Middle School</option>
+                        <option value="high">High School</option>
+                        <option value="college">College</option>
+                        <option value="professional">Professional</option>
+                    </select>
+                </div>
+                <div class="form-options">
+                    <label>
+                        <input type="checkbox" required> I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn auth-btn">Create Account</button>
+                <div class="auth-switch">
+                    Already have an account? <a href="#" id="showLogin">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/logo-white.png" alt="EduLearn Logo">
+                        <span>EduLearn</span>
+                    </div>
+                    <p>Empowering learners worldwide with accessible, high-quality education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Mathematics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Grade Levels</h3>
+                    <ul>
+                        <li><a href="#">Elementary</a></li>
+                        <li><a href="#">Middle School</a></li>
+                        <li><a href="#">High School</a></li>
+                        <li><a href="#">College</a></li>
+                        <li><a href="#">Professional</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Become an Instructor</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 EduLearn. All rights reserved.</p>
+                <div class="footer-payments">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

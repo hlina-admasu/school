@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | EduLearn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body class="header">
+    <!-- Navigation (Same as before) -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="EduLearn Logo">
+                    <span>EduLearn</span>
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home nav-icon"></i> Home</a></li>
+                <li class="nav-item"><a href="courses.html" class="nav-link active"><i class="fas fa-book nav-icon"></i> Courses</a></li>
+                <li class="nav-item"><a href="categories.html" class="nav-link"><i class="fas fa-layer-group nav-icon"></i> Categories</a></li>
+                <li class="nav-item"><a href="tests.html" class="nav-link"><i class="fas fa-clipboard-check nav-icon"></i> Tests</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link"><i class="fas fa-info-circle nav-icon"></i> About</a></li>
+            </ul>
+
+            <div class="nav-auth">
+                <a href="login.html" class="auth-btn login-btn"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <a href="register.html" class="auth-btn signup-btn"><i class="fas fa-user-plus"></i> Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Courses Main Content -->
+    <main class="courses-main">
+        <div class="container">
+            <!-- Courses Header -->
+            <header class="courses-header">
+                <h1>Our Courses</h1>
+                <p>Browse through our extensive collection of courses designed for all learning levels</p>
+                
+                <div class="courses-search">
+                    <input type="text" placeholder="Search courses...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="courses-filter">
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                        <option value="development">Development</option>
+                        <option value="design">Design</option>
+                        <option value="business">Business</option>
+                        <option value="science">Science</option>
+                    </select>
+                    
+                    <select id="level-filter">
+                        <option value="">All Levels</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+            </header>
+
+            <!-- Courses Grid -->
+            <section class="courses-grid">
+                <!-- Course Card 1 -->
+                <article class="course-card">
+                    <div class="course-image">
+                        <img src="images/courses/web-development.jpg" alt="Web Development">
+                        <span class="course-level beginner">Beginner</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category development">Development</div>
+                        <h3>Introduction to Web Development</h3>
+                        <p>Learn the fundamentals of HTML, CSS, and JavaScript to build your first website.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 8 Weeks</span>
+                            <span><i class="fas fa-user-graduate"></i> 1,245 Students</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i> 4.8
+                            </div>
+                            <a href="course-detail.html" class="course-btn">View Course</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Course Card 2 -->
+                <article class="course-card">
+                    <div class="course-image">
+                        <img src="images/courses/graphic-design.jpg" alt="Graphic Design">
+                        <span class="course-level intermediate">Intermediate</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category design">Design</div>
+                        <h3>Graphic Design Fundamentals</h3>
+                        <p>Master the principles of design, typography, and color theory.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 6 Weeks</span>
+                            <span><i class="fas fa-user-graduate"></i> 892 Students</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i> 4.7
+                            </div>
+                            <a href="course-detail.html" class="course-btn">View Course</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Course Card 3 -->
+                <article class="course-card">
+                    <div class="course-image">
+                        <img src="images/courses/digital-marketing.jpg" alt="Digital Marketing">
+                        <span class="course-level beginner">Beginner</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category business">Business</div>
+                        <h3>Digital Marketing Essentials</h3>
+                        <p>Learn SEO, social media marketing, and content strategy.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 4 Weeks</span>
+                            <span><i class="fas fa-user-graduate"></i> 1,532 Students</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i> 4.9
+                            </div>
+                            <a href="course-detail.html" class="course-btn">View Course</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Course Card 4 -->
+                <article class="course-card">
+                    <div class="course-image">
+                        <img src="images/courses/data-science.jpg" alt="Data Science">
+                        <span class="course-level advanced">Advanced</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category science">Science</div>
+                        <h3>Data Science with Python</h3>
+                        <p>Learn data analysis, visualization, and machine learning.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 10 Weeks</span>
+                            <span><i class="fas fa-user-graduate"></i> 756 Students</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i> 4.6
+                            </div>
+                            <a href="course-detail.html" class="course-btn">View Course</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Course Card 5 -->
+                <article class="course-card">
+                    <div class="course-image">
+                        <img src="images/courses/mobile-app.jpg" alt="Mobile App Development">
+                        <span class="course-level intermediate">Intermediate</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category development">Development</div>
+                        <h3>Mobile App Development</h3>
+                        <p>Build cross-platform mobile apps with React Native.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 8 Weeks</span>
+                            <span><i class="fas fa-user-graduate"></i> 1,024 Students</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i> 4.5
+                            </div>
+                            <a href="course-detail.html" class="course-btn">View Course</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Course Card 6 -->
+                <article class="course-card">
+                    <div class="course-image">
+                        <img src="images/courses/ui-ux.jpg" alt="UI/UX Design">
+                        <span class="course-level intermediate">Intermediate</span>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category design">Design</div>
+                        <h3>UI/UX Design Principles</h3>
+                        <p>Create intuitive and beautiful user interfaces and experiences.</p>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 6 Weeks</span>
+                            <span><i class="fas fa-user-graduate"></i> 1,187 Students</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i> 4.8
+                            </div>
+                            <a href="course-detail.html" class="course-btn">View Course</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Pagination -->
+            <div class="courses-pagination">
+                <a href="#" class="page-btn disabled"><i class="fas fa-chevron-left"></i></a>
+                <a href="#" class="page-btn active">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <a href="#" class="page-btn"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About EduLearn</h4>
+                    <p>Empowering learners worldwide with accessible, high-quality education since 2015.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="tests.html">Tests</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>contact@edulearn.com<br>+1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 EduLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
